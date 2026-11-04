@@ -1,34 +1,70 @@
 # Symphony Themes
 
-Native, data-only color themes for the [Symphony coding agent](https://github.com/Sarthakischauhan/symphony). This plugin contains no skills, tools, or executable addon code.
-
-## Themes
-
-- **One Dark** — a dark palette based on Atom's One Dark colors.
-- **Symphony Dusk** — an original purple-tinted dark palette.
-- **Symphony Daylight** — an original light palette.
+A marketplace of native, data-only color themes for the [Symphony coding agent](https://github.com/Sarthakischauhan/symphony). Theme plugins contain no skills, tools, or executable addon code.
 
 ## Install
 
-Theme plugins require the Symphony `feat/plugin-themes` branch until that feature is released. From that checkout:
+Theme plugins require Symphony's unreleased `feat/plugin-themes` branch. From that checkout:
 
 ```sh
-uv run symphony plugins add Sarthakischauhan/symphony-themes
+# Register the catalog once; this does not install a theme family.
+uv run symphony plugins marketplace add Sarthakischauhan/symphony-themes
+
+# Install only the families you want (each includes its variants).
+uv run symphony plugins add gruvbox@symphony-themes
+uv run symphony plugins add monokai@symphony-themes
+uv run symphony plugins add github@symphony-themes
 uv run symphony themes list
 uv run symphony
 ```
 
-Inside Symphony, use `/theme` to preview and select a theme, or use `/theme symphony-themes:One Dark` directly. Changes take effect in new sessions after installation. To update or remove the plugin:
+Inside Symphony, open `/theme` to preview and select a theme, or use `/theme gruvbox:Gruvbox Dark` directly. Restart a running session after installing a family. Once the feature is released, use `symphony` in place of `uv run symphony`.
+
+The marketplace registration copies its catalog repository into Symphony's cache; it does not make any family available in `/theme` until you install that family. Installing a family copies its theme TOMLs and makes all its variants available; selecting a variant does not download anything further.
 
 ```sh
-uv run symphony plugins update symphony-themes
-uv run symphony plugins remove symphony-themes
+uv run symphony plugins marketplace update symphony-themes
+uv run symphony plugins update gruvbox
+uv run symphony plugins remove gruvbox
 ```
 
-An existing `$SYMPHONY_HOME/theme.toml` (or `~/.symphony/theme.toml`) overrides the selected plugin theme and is never overwritten.
+If you installed the old single `symphony-themes` plugin, remove it with `uv run symphony plugins remove symphony-themes`, then use the marketplace commands above. An existing `$SYMPHONY_HOME/theme.toml` (or `~/.symphony/theme.toml`) overrides the chosen theme and is never overwritten.
 
-## Contribute a theme
+## Theme families
 
-Add a uniquely named TOML file under `themes/`, with `name`, `base` (`dark` or `light`), and a `[colors]` table. Existing files show all supported tokens. Specify every token for predictable colors; missing tokens fall back to the selected base palette. Only theme data is read; CSS and executable code are not loaded from theme files.
+| Plugin | Variants | Palette inspiration |
+| --- | --- | --- |
+| `gruvbox` | Gruvbox Dark, Gruvbox Light | [Gruvbox](https://github.com/morhetz/gruvbox) |
+| `monokai` | Monokai | [Monokai](https://monokai.nl/) |
+| `github` | GitHub Dark | [GitHub color themes](https://github.com/primer/github-vscode-theme) |
+| `one-dark` | One Dark | [Atom One Dark](https://github.com/atom/one-dark-syntax) |
+| `symphony` | Symphony Dusk, Symphony Daylight | Original Symphony palettes |
+
+These are Symphony-native adaptations, not pixel-perfect ports of another application. The screenshots below are captured from the Symphony TUI with representative transcript and code content.
+
+### Gruvbox Dark
+![Gruvbox Dark](screenshots/gruvbox-dark.png)
+
+### Gruvbox Light
+![Gruvbox Light](screenshots/gruvbox-light.png)
+
+### Monokai
+![Monokai](screenshots/monokai.png)
+
+### GitHub Dark
+![GitHub Dark](screenshots/github-dark.png)
+
+### One Dark
+![One Dark](screenshots/one-dark.png)
+
+### Symphony Dusk
+![Symphony Dusk](screenshots/symphony-dusk.png)
+
+### Symphony Daylight
+![Symphony Daylight](screenshots/symphony-daylight.png)
+
+## Contribute
+
+Each family under `plugins/` has a `plugin.json` and a `themes/` directory. Add a uniquely named TOML with `name`, `base` (`dark` or `light`), and a `[colors]` table. Existing files show all supported tokens. Specify every token for predictable colors; missing tokens fall back to the selected base palette. Add new families to `.agents/plugins/marketplace.json`. Only theme data is read; CSS and executable code are not loaded from theme files.
 
 Some Symphony widgets still use fixed colors, and transcript text already rendered before switching themes may keep its old colors. Contributions must be your own or include clear licensing and attribution.
