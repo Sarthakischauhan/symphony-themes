@@ -5,6 +5,7 @@
     {"name": "one-dark", "source": "./plugins/one-dark", "version": "0.2.0"},
     {"name": "gruvbox", "source": "./plugins/gruvbox", "version": "0.2.0"},
     {"name": "monokai", "source": "./plugins/monokai", "version": "0.2.0"},
-    {"name": "github", "source": "./plugins/github", "version": "0.2.0"}
+    {"name": "github", "source": "./plugins/github", "version": "0.2.0"},
+    {"name": "kanagawa", "source": "./plugins/kanagawa", "version": "0.2.0"}
   ]
 }

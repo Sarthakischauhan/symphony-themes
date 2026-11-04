@@ -37,31 +37,59 @@ If you installed the old single `symphony-themes` plugin, remove it with `uv run
 | `gruvbox` | Gruvbox Dark, Gruvbox Light | [Gruvbox](https://github.com/morhetz/gruvbox) |
 | `monokai` | Monokai | [Monokai](https://monokai.nl/) |
 | `github` | GitHub Dark | [GitHub color themes](https://github.com/primer/github-vscode-theme) |
+| `kanagawa` | Kanagawa Wave | [Kanagawa](https://github.com/rebelot/kanagawa.nvim) |
 | `one-dark` | One Dark | [Atom One Dark](https://github.com/atom/one-dark-syntax) |
 | `symphony` | Symphony Dusk, Symphony Daylight | Original Symphony palettes |
 
 These are Symphony-native adaptations, not pixel-perfect ports of another application. The screenshots below are captured from the Symphony TUI with representative transcript and code content.
 
-### Gruvbox Dark
+<details>
+<summary>Gruvbox Dark</summary>
+
 ![Gruvbox Dark](screenshots/gruvbox-dark.png)
+</details>
 
-### Gruvbox Light
+<details>
+<summary>Gruvbox Light</summary>
+
 ![Gruvbox Light](screenshots/gruvbox-light.png)
+</details>
 
-### Monokai
+<details>
+<summary>Monokai</summary>
+
 ![Monokai](screenshots/monokai.png)
+</details>
 
-### GitHub Dark
+<details>
+<summary>GitHub Dark</summary>
+
 ![GitHub Dark](screenshots/github-dark.png)
+</details>
 
-### One Dark
+<details>
+<summary>Kanagawa Wave</summary>
+
+![Kanagawa Wave](screenshots/kanagawa-wave.png)
+</details>
+
+<details>
+<summary>One Dark</summary>
+
 ![One Dark](screenshots/one-dark.png)
+</details>
 
-### Symphony Dusk
+<details>
+<summary>Symphony Dusk</summary>
+
 ![Symphony Dusk](screenshots/symphony-dusk.png)
+</details>
 
-### Symphony Daylight
+<details>
+<summary>Symphony Daylight</summary>
+
 ![Symphony Daylight](screenshots/symphony-daylight.png)
+</details>
 
 ## Contribute
 
