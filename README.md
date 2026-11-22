@@ -14,6 +14,8 @@ uv run symphony plugins marketplace add Sarthakischauhan/symphony-themes
 uv run symphony plugins add gruvbox@symphony-themes
 uv run symphony plugins add monokai@symphony-themes
 uv run symphony plugins add github@symphony-themes
+uv run symphony plugins add anysphere@symphony-themes
+uv run symphony plugins add zed@symphony-themes
 uv run symphony themes list
 uv run symphony
 ```
@@ -40,8 +42,14 @@ If you installed the old single `symphony-themes` plugin, remove it with `uv run
 | `kanagawa` | Kanagawa Wave | [Kanagawa](https://github.com/rebelot/kanagawa.nvim) |
 | `one-dark` | One Dark | [Atom One Dark](https://github.com/atom/one-dark-syntax) |
 | `symphony` | Symphony Dusk, Symphony Daylight | Original Symphony palettes |
+| `anysphere` | Anysphere Dark, Anysphere Light | Minimal Anysphere/Cursor-inspired neutrals |
+| `zed` | Zed Dark, Zed Light | Zed editor-inspired palettes |
+| `rose-pine` | Rosé Pine Moon | [Rosé Pine](https://rosepinetheme.com/) |
+| `catppuccin` | Catppuccin Mocha | [Catppuccin](https://catppuccin.com/) |
+| `tokyo-night` | Tokyo Night Storm | [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) |
+| `nord` | Nord Polar | [Nord](https://www.nordtheme.com/) |
 
-These are Symphony-native adaptations, not pixel-perfect ports of another application. The screenshots below are captured from the Symphony TUI with representative transcript and code content.
+These are Symphony-native adaptations, not pixel-perfect ports of another application. The existing PNG screenshots below are captured from the Symphony TUI with representative transcript and code content. **New SVG previews are illustrative palette mockups, not live TUI captures.**
 
 <details>
 <summary>Gruvbox Dark</summary>
@@ -89,6 +97,56 @@ These are Symphony-native adaptations, not pixel-perfect ports of another applic
 <summary>Symphony Daylight</summary>
 
 ![Symphony Daylight](screenshots/symphony-daylight.png)
+</details>
+
+## New theme previews
+
+<details>
+<summary>Anysphere Dark (illustrative palette preview)</summary>
+
+![Anysphere Dark palette preview](screenshots/anysphere-dark.svg)
+</details>
+
+<details>
+<summary>Anysphere Light (illustrative palette preview)</summary>
+
+![Anysphere Light palette preview](screenshots/anysphere-light.svg)
+</details>
+
+<details>
+<summary>Zed Dark (illustrative palette preview)</summary>
+
+![Zed Dark palette preview](screenshots/zed-dark.svg)
+</details>
+
+<details>
+<summary>Zed Light (illustrative palette preview)</summary>
+
+![Zed Light palette preview](screenshots/zed-light.svg)
+</details>
+
+<details>
+<summary>Rosé Pine Moon (illustrative palette preview)</summary>
+
+![Rosé Pine Moon palette preview](screenshots/rose-pine-moon.svg)
+</details>
+
+<details>
+<summary>Catppuccin Mocha (illustrative palette preview)</summary>
+
+![Catppuccin Mocha palette preview](screenshots/catppuccin-mocha.svg)
+</details>
+
+<details>
+<summary>Tokyo Night Storm (illustrative palette preview)</summary>
+
+![Tokyo Night Storm palette preview](screenshots/tokyo-night-storm.svg)
+</details>
+
+<details>
+<summary>Nord Polar (illustrative palette preview)</summary>
+
+![Nord Polar palette preview](screenshots/nord-polar.svg)
 </details>
 
 ## Contribute

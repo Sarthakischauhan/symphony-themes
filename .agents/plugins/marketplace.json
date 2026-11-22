@@ -1,11 +1,65 @@
 {
   "name": "symphony-themes",
   "plugins": [
-    {"name": "symphony", "source": "./plugins/symphony", "version": "0.2.0"},
-    {"name": "one-dark", "source": "./plugins/one-dark", "version": "0.2.0"},
-    {"name": "gruvbox", "source": "./plugins/gruvbox", "version": "0.2.0"},
-    {"name": "monokai", "source": "./plugins/monokai", "version": "0.2.0"},
-    {"name": "github", "source": "./plugins/github", "version": "0.2.0"},
-    {"name": "kanagawa", "source": "./plugins/kanagawa", "version": "0.2.0"}
+    {
+      "name": "symphony",
+      "source": "./plugins/symphony",
+      "version": "0.2.0"
+    },
+    {
+      "name": "one-dark",
+      "source": "./plugins/one-dark",
+      "version": "0.2.0"
+    },
+    {
+      "name": "gruvbox",
+      "source": "./plugins/gruvbox",
+      "version": "0.2.0"
+    },
+    {
+      "name": "monokai",
+      "source": "./plugins/monokai",
+      "version": "0.2.0"
+    },
+    {
+      "name": "github",
+      "source": "./plugins/github",
+      "version": "0.2.0"
+    },
+    {
+      "name": "kanagawa",
+      "source": "./plugins/kanagawa",
+      "version": "0.2.0"
+    },
+    {
+      "name": "anysphere",
+      "source": "./plugins/anysphere",
+      "version": "0.2.0"
+    },
+    {
+      "name": "zed",
+      "source": "./plugins/zed",
+      "version": "0.2.0"
+    },
+    {
+      "name": "rose-pine",
+      "source": "./plugins/rose-pine",
+      "version": "0.2.0"
+    },
+    {
+      "name": "catppuccin",
+      "source": "./plugins/catppuccin",
+      "version": "0.2.0"
+    },
+    {
+      "name": "tokyo-night",
+      "source": "./plugins/tokyo-night",
+      "version": "0.2.0"
+    },
+    {
+      "name": "nord",
+      "source": "./plugins/nord",
+      "version": "0.2.0"
+    }
   ]
 }
