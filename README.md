@@ -49,6 +49,12 @@ If you installed the old single `symphony-themes` plugin, remove it with `uv run
 | `tokyo-night` | Tokyo Night Storm | [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) |
 | `nord` | Nord Polar | [Nord](https://www.nordtheme.com/) |
 
+| `oxocarbon` | Oxocarbon Dark, Oxocarbon Light | High-contrast monochrome and crisp blue accents inspired by IBM Carbon. |
+| `everforest` | Everforest Dark, Everforest Light | Soft forest greens, warmer neutrals, and low-glare surfaces. |
+| `solarized` | Solarized Dark, Solarized Light | Classic Solarized hue relationships adapted for Symphony. |
+| `ayu` | Ayu Mirage, Ayu Light | Warm amber accents with a polished, modern editor surface. |
+| `flexoki` | Flexoki Dark, Flexoki Light | Ink-and-paper inspired palettes with subtle warm accents. |
+
 These are Symphony-native adaptations, not pixel-perfect ports of another application. The existing PNG screenshots below are captured from the Symphony TUI with representative transcript and code content. **New SVG previews are illustrative palette mockups, not live TUI captures.**
 
 <details>
@@ -147,6 +153,70 @@ These are Symphony-native adaptations, not pixel-perfect ports of another applic
 <summary>Nord Polar (illustrative palette preview)</summary>
 
 ![Nord Polar palette preview](screenshots/nord-polar.svg)
+</details>
+
+## More editor palette previews
+
+The following previews are generated palette mockups, not captures from a running Symphony TUI.
+
+<details>
+<summary>Oxocarbon Dark (illustrative preview)</summary>
+
+![Oxocarbon Dark palette preview](screenshots/oxocarbon-dark.svg)
+</details>
+
+<details>
+<summary>Oxocarbon Light (illustrative preview)</summary>
+
+![Oxocarbon Light palette preview](screenshots/oxocarbon-light.svg)
+</details>
+
+<details>
+<summary>Everforest Dark (illustrative preview)</summary>
+
+![Everforest Dark palette preview](screenshots/everforest-dark.svg)
+</details>
+
+<details>
+<summary>Everforest Light (illustrative preview)</summary>
+
+![Everforest Light palette preview](screenshots/everforest-light.svg)
+</details>
+
+<details>
+<summary>Solarized Dark (illustrative preview)</summary>
+
+![Solarized Dark palette preview](screenshots/solarized-dark.svg)
+</details>
+
+<details>
+<summary>Solarized Light (illustrative preview)</summary>
+
+![Solarized Light palette preview](screenshots/solarized-light.svg)
+</details>
+
+<details>
+<summary>Ayu Mirage (illustrative preview)</summary>
+
+![Ayu Mirage palette preview](screenshots/ayu-mirage.svg)
+</details>
+
+<details>
+<summary>Ayu Light (illustrative preview)</summary>
+
+![Ayu Light palette preview](screenshots/ayu-light.svg)
+</details>
+
+<details>
+<summary>Flexoki Dark (illustrative preview)</summary>
+
+![Flexoki Dark palette preview](screenshots/flexoki-dark.svg)
+</details>
+
+<details>
+<summary>Flexoki Light (illustrative preview)</summary>
+
+![Flexoki Light palette preview](screenshots/flexoki-light.svg)
 </details>
 
 ## Contribute

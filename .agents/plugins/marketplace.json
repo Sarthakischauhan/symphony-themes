@@ -60,6 +60,31 @@
       "name": "nord",
       "source": "./plugins/nord",
       "version": "0.2.0"
+    },
+    {
+      "name": "oxocarbon",
+      "source": "./plugins/oxocarbon",
+      "version": "0.2.0"
+    },
+    {
+      "name": "everforest",
+      "source": "./plugins/everforest",
+      "version": "0.2.0"
+    },
+    {
+      "name": "solarized",
+      "source": "./plugins/solarized",
+      "version": "0.2.0"
+    },
+    {
+      "name": "ayu",
+      "source": "./plugins/ayu",
+      "version": "0.2.0"
+    },
+    {
+      "name": "flexoki",
+      "source": "./plugins/flexoki",
+      "version": "0.2.0"
     }
   ]
 }
