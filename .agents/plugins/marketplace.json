@@ -85,6 +85,26 @@
       "name": "flexoki",
       "source": "./plugins/flexoki",
       "version": "0.2.0"
+    },
+    {
+      "name": "hasakura",
+      "source": "./plugins/hasakura",
+      "version": "0.2.0"
+    },
+    {
+      "name": "bubblegum",
+      "source": "./plugins/bubblegum",
+      "version": "0.2.0"
+    },
+    {
+      "name": "cpp",
+      "source": "./plugins/cpp",
+      "version": "0.2.0"
+    },
+    {
+      "name": "sakura",
+      "source": "./plugins/sakura",
+      "version": "0.2.0"
     }
   ]
 }

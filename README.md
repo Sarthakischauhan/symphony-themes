@@ -4,33 +4,37 @@ A marketplace of native, data-only color themes for the [Symphony coding agent](
 
 ## Install
 
-Theme plugins require Symphony's unreleased `feat/plugin-themes` branch. From that checkout:
+Use a Symphony build with support for theme plugins.
 
 ```sh
 # Register the catalog once; this does not install a theme family.
-uv run symphony plugins marketplace add Sarthakischauhan/symphony-themes
+symphony plugins marketplace add Sarthakischauhan/symphony-themes
 
 # Install only the families you want (each includes its variants).
-uv run symphony plugins add gruvbox@symphony-themes
-uv run symphony plugins add monokai@symphony-themes
-uv run symphony plugins add github@symphony-themes
-uv run symphony plugins add anysphere@symphony-themes
-uv run symphony plugins add zed@symphony-themes
-uv run symphony themes list
-uv run symphony
+symphony plugins add gruvbox@symphony-themes
+symphony plugins add monokai@symphony-themes
+symphony plugins add github@symphony-themes
+symphony plugins add anysphere@symphony-themes
+symphony plugins add zed@symphony-themes
+symphony plugins add hasakura@symphony-themes
+symphony plugins add bubblegum@symphony-themes
+symphony plugins add cpp@symphony-themes
+symphony plugins add sakura@symphony-themes
+symphony themes list
+symphony
 ```
 
-Inside Symphony, open `/theme` to preview and select a theme, or use `/theme gruvbox:Gruvbox Dark` directly. Restart a running session after installing a family. Once the feature is released, use `symphony` in place of `uv run symphony`.
+Inside Symphony, open `/theme` to preview and select a theme, or use `/theme gruvbox:Gruvbox Dark` directly. Restart a running session after installing a family.
 
 The marketplace registration copies its catalog repository into Symphony's cache; it does not make any family available in `/theme` until you install that family. Installing a family copies its theme TOMLs and makes all its variants available; selecting a variant does not download anything further.
 
 ```sh
-uv run symphony plugins marketplace update symphony-themes
-uv run symphony plugins update gruvbox
-uv run symphony plugins remove gruvbox
+symphony plugins marketplace update symphony-themes
+symphony plugins update gruvbox
+symphony plugins remove gruvbox
 ```
 
-If you installed the old single `symphony-themes` plugin, remove it with `uv run symphony plugins remove symphony-themes`, then use the marketplace commands above. An existing `$SYMPHONY_HOME/theme.toml` (or `~/.symphony/theme.toml`) overrides the chosen theme and is never overwritten.
+If you installed the old single `symphony-themes` plugin, remove it with `symphony plugins remove symphony-themes`, then use the marketplace commands above. An existing `$SYMPHONY_HOME/theme.toml` (or `~/.symphony/theme.toml`) overrides the chosen theme and is never overwritten.
 
 ## Theme families
 
@@ -48,12 +52,15 @@ If you installed the old single `symphony-themes` plugin, remove it with `uv run
 | `catppuccin` | Catppuccin Mocha | [Catppuccin](https://catppuccin.com/) |
 | `tokyo-night` | Tokyo Night Storm | [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) |
 | `nord` | Nord Polar | [Nord](https://www.nordtheme.com/) |
-
 | `oxocarbon` | Oxocarbon Dark, Oxocarbon Light | High-contrast monochrome and crisp blue accents inspired by IBM Carbon. |
 | `everforest` | Everforest Dark, Everforest Light | Soft forest greens, warmer neutrals, and low-glare surfaces. |
 | `solarized` | Solarized Dark, Solarized Light | Classic Solarized hue relationships adapted for Symphony. |
 | `ayu` | Ayu Mirage, Ayu Light | Warm amber accents with a polished, modern editor surface. |
 | `flexoki` | Flexoki Dark, Flexoki Light | Ink-and-paper inspired palettes with subtle warm accents. |
+| `hasakura` | haSakura-theme | [haSakura-theme](https://marketplace.visualstudio.com/items?itemName=HashiramaNaiff.haSakura-theme) |
+| `bubblegum` | bubblegum | [bubblegum](https://vscodethemes.com/e/connieth.bubblegum/bubblegum) |
+| `cpp` | C/C++ Dark, C/C++ Light, C/C++ 2017 Dark, C/C++ 2017 Light | [Visual Studio C/C++ Themes](https://github.com/microsoft/vscode-cpptools/tree/main/Themes/themes) |
+| `sakura` | Sakura | [Ghostty Sakura](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/ghostty/Sakura) |
 
 These are Symphony-native adaptations, not pixel-perfect ports of another application. The existing PNG screenshots below are captured from the Symphony TUI with representative transcript and code content. **New SVG previews are illustrative palette mockups, not live TUI captures.**
 
